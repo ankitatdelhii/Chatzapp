@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WelcomeView.swift
 //  Chatzapp
 //
 //  Created by Ankit Saxena on 16/02/19.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print("Welcome")
+
     }
 
-
 }
-
