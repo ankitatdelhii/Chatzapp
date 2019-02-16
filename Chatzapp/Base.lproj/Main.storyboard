@@ -35,6 +35,9 @@
                                         <state key="normal" title="LOGIN">
                                             <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="h3h-xu-1RB" kind="show" identifier="goToLogin" id="3ey-jC-CGz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,6 +68,74 @@
             </objects>
             <point key="canvasLocation" x="916" y="-599"/>
         </scene>
+        <!--Login-->
+        <scene sceneID="WbF-90-uIX">
+            <objects>
+                <viewController id="h3h-xu-1RB" customClass="LoginView" customModule="Chatzapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pS6-2e-tmC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by7-WF-Y8x">
+                                <rect key="frame" x="37" y="261" width="125" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="5vv-py-G8X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aot-uh-rAa">
+                                <rect key="frame" x="37" y="392" width="129" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="2FK-rg-tbS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AgF-uC-dq4">
+                                <rect key="frame" x="37" y="448" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="zgN-Xe-eyS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile No. or Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZE-ym-jWr">
+                                <rect key="frame" x="37" y="317" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="HLS-9e-s4V"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="by7-WF-Y8x" firstAttribute="leading" secondItem="Ste-OC-nYt" secondAttribute="leading" constant="37" id="62J-pi-ZDn"/>
+                            <constraint firstItem="Ste-OC-nYt" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="aot-uh-rAa" secondAttribute="trailing" constant="209" id="CkC-mb-Eqs"/>
+                            <constraint firstItem="aot-uh-rAa" firstAttribute="leading" secondItem="Ste-OC-nYt" secondAttribute="leading" constant="37" id="DRb-2F-f58"/>
+                            <constraint firstItem="UZE-ym-jWr" firstAttribute="leading" secondItem="Ste-OC-nYt" secondAttribute="leading" constant="37" id="EWn-BH-Rdi"/>
+                            <constraint firstItem="aot-uh-rAa" firstAttribute="top" secondItem="UZE-ym-jWr" secondAttribute="bottom" constant="35" id="LkF-3U-RaR"/>
+                            <constraint firstItem="Ste-OC-nYt" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="by7-WF-Y8x" secondAttribute="trailing" constant="213" id="Try-29-dRX"/>
+                            <constraint firstItem="AgF-uC-dq4" firstAttribute="top" secondItem="aot-uh-rAa" secondAttribute="bottom" constant="20" id="VX3-ch-lNm"/>
+                            <constraint firstItem="Ste-OC-nYt" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="UZE-ym-jWr" secondAttribute="trailing" constant="88" id="XCN-hx-XfO"/>
+                            <constraint firstItem="Ste-OC-nYt" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="AgF-uC-dq4" secondAttribute="trailing" constant="88" id="deo-Ig-RVe"/>
+                            <constraint firstItem="UZE-ym-jWr" firstAttribute="top" secondItem="by7-WF-Y8x" secondAttribute="bottom" constant="20" id="kAn-NB-1q0"/>
+                            <constraint firstItem="by7-WF-Y8x" firstAttribute="centerY" secondItem="pS6-2e-tmC" secondAttribute="centerY" constant="-54.5" id="mdD-ic-zHc"/>
+                            <constraint firstItem="AgF-uC-dq4" firstAttribute="leading" secondItem="Ste-OC-nYt" secondAttribute="leading" constant="37" id="x1K-5F-9HJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ste-OC-nYt"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="Qgc-mL-M1V"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZX6-95-6eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1668" y="-599"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="T8T-Yr-mgo">
             <objects>
@@ -89,4 +160,5 @@
             <point key="canvasLocation" x="88.799999999999997" y="-598.65067466266873"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
