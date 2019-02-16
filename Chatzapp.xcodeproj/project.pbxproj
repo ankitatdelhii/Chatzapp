@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9DDCD65422186809001AA1F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCD65322186809001AA1F9 /* LoginView.swift */; };
+		9DDCD65622189E24001AA1F9 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCD65522189E24001AA1F9 /* RegisterView.swift */; };
+		9DDCD6582218A686001AA1F9 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCD6572218A686001AA1F9 /* ChatView.swift */; };
 		9DEAC58F22184A9500AE6197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAC58E22184A9500AE6197 /* AppDelegate.swift */; };
 		9DEAC59422184A9500AE6197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAC59222184A9500AE6197 /* Main.storyboard */; };
 		9DEAC59622184A9600AE6197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAC59522184A9600AE6197 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		9DDCD65322186809001AA1F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9DDCD65522189E24001AA1F9 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9DDCD6572218A686001AA1F9 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		9DEAC58B22184A9500AE6197 /* Chatzapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatzapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEAC58E22184A9500AE6197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DEAC59322184A9500AE6197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,10 +63,12 @@
 				9DEAC58E22184A9500AE6197 /* AppDelegate.swift */,
 				9DEAC59222184A9500AE6197 /* Main.storyboard */,
 				9DEAC5A022184EDE00AE6197 /* WelcomeView.swift */,
+				9DDCD65522189E24001AA1F9 /* RegisterView.swift */,
 				9DDCD65322186809001AA1F9 /* LoginView.swift */,
 				9DEAC59522184A9600AE6197 /* Assets.xcassets */,
 				9DEAC59722184A9600AE6197 /* LaunchScreen.storyboard */,
 				9DEAC59A22184A9600AE6197 /* Info.plist */,
+				9DDCD6572218A686001AA1F9 /* ChatView.swift */,
 			);
 			path = Chatzapp;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DDCD65422186809001AA1F9 /* LoginView.swift in Sources */,
+				9DDCD65622189E24001AA1F9 /* RegisterView.swift in Sources */,
+				9DDCD6582218A686001AA1F9 /* ChatView.swift in Sources */,
 				9DEAC58F22184A9500AE6197 /* AppDelegate.swift in Sources */,
 				9DEAC5A122184EDE00AE6197 /* WelcomeView.swift in Sources */,
 			);
