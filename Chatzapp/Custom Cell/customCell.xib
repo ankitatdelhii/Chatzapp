@@ -22,25 +22,52 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zF-Zz-5H0" userLabel="BackgroundView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mx2-gP-Aev">
-                                <rect key="frame" x="139" y="11" width="29" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H7c-HQ-URg" userLabel="SenderPic">
+                                <rect key="frame" x="8" y="5.5" width="32" height="32.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFu-uI-E3c">
+                                <rect key="frame" x="46" y="0.0" width="224" height="43"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sender" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mx2-gP-Aev">
+                                <rect key="frame" x="280" y="0.0" width="38.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mx2-gP-Aev" secondAttribute="bottom" constant="0.5" id="0LU-WG-ceN"/>
+                            <constraint firstItem="BFu-uI-E3c" firstAttribute="width" secondItem="1zF-Zz-5H0" secondAttribute="width" multiplier="0.7" id="325-KU-t21"/>
+                            <constraint firstItem="BFu-uI-E3c" firstAttribute="leading" secondItem="H7c-HQ-URg" secondAttribute="trailing" constant="6" id="HZv-fI-9Gp"/>
+                            <constraint firstItem="mx2-gP-Aev" firstAttribute="top" secondItem="1zF-Zz-5H0" secondAttribute="top" id="IgI-9d-Aqa"/>
+                            <constraint firstItem="mx2-gP-Aev" firstAttribute="leading" secondItem="BFu-uI-E3c" secondAttribute="trailing" constant="10" id="Jnw-pp-Mzc"/>
+                            <constraint firstItem="H7c-HQ-URg" firstAttribute="centerY" secondItem="1zF-Zz-5H0" secondAttribute="centerY" id="Wri-uB-OPl"/>
+                            <constraint firstItem="H7c-HQ-URg" firstAttribute="leading" secondItem="1zF-Zz-5H0" secondAttribute="leading" constant="8" id="YJe-t2-0Mh"/>
+                            <constraint firstAttribute="bottom" secondItem="H7c-HQ-URg" secondAttribute="bottom" constant="5.5" id="fUv-Zj-Cfq"/>
+                            <constraint firstItem="BFu-uI-E3c" firstAttribute="top" secondItem="1zF-Zz-5H0" secondAttribute="top" id="myH-dk-80w"/>
+                            <constraint firstAttribute="bottom" secondItem="BFu-uI-E3c" secondAttribute="bottom" constant="0.5" id="q0E-Xz-roW"/>
+                            <constraint firstItem="H7c-HQ-URg" firstAttribute="width" secondItem="1zF-Zz-5H0" secondAttribute="width" multiplier="0.1" id="r8T-7d-iYh"/>
+                            <constraint firstItem="mx2-gP-Aev" firstAttribute="width" secondItem="1zF-Zz-5H0" secondAttribute="width" multiplier="0.12" id="tcR-Mx-foC"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="1zF-Zz-5H0" secondAttribute="bottom" id="AAJ-ug-R8U"/>
-                    <constraint firstItem="1zF-Zz-5H0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZlF-iZ-fXa"/>
-                    <constraint firstAttribute="trailing" secondItem="1zF-Zz-5H0" secondAttribute="trailing" id="axT-Iw-hrF"/>
-                    <constraint firstItem="1zF-Zz-5H0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nGh-XC-RHB"/>
+                    <constraint firstItem="1zF-Zz-5H0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="03w-2d-H9x"/>
+                    <constraint firstItem="1zF-Zz-5H0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="60I-7d-ODH"/>
+                    <constraint firstAttribute="trailing" secondItem="1zF-Zz-5H0" secondAttribute="trailing" id="7fJ-4T-R3J"/>
+                    <constraint firstAttribute="bottom" secondItem="1zF-Zz-5H0" secondAttribute="bottom" id="AHg-PJ-tGw"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageLabel" destination="BFu-uI-E3c" id="9el-Zk-KJc"/>
+                <outlet property="senderLabel" destination="mx2-gP-Aev" id="PCK-6I-vM1"/>
+                <outlet property="senderPic" destination="H7c-HQ-URg" id="7yS-Nw-qTF"/>
+            </connections>
             <point key="canvasLocation" x="56" y="48.575712143928037"/>
         </tableViewCell>
     </objects>

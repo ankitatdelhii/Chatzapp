@@ -86,12 +86,14 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //MARK: TableView Methods
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! customCell
+        cell.messageLabel.text = messageArray[indexPath.row].messageBody!
+        cell.senderLabel.text = messageArray[indexPath.row].sender!
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return messageArray.count
     }
     
 }
