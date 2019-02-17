@@ -27,7 +27,7 @@ class LoginView: UIViewController {
                 print(error ?? "Error Signing In")
             }
             else{
-//                self.performSegue(withIdentifier: "goToChat", sender: self)
+                self.performSegue(withIdentifier: "goToChat", sender: self)
             }
         }
     }

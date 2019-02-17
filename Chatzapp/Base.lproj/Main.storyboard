@@ -136,7 +136,6 @@
                                 </state>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="8Q8-Z1-O2A" eventType="touchUpInside" id="ZIv-GS-bBI"/>
-                                    <segue destination="bIY-wQ-Uey" kind="show" identifier="goToChat" id="bjK-go-Do4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -173,11 +172,12 @@
                         <outlet property="passwordTextField" destination="sUg-81-twk" id="6ww-VM-BkE"/>
                         <outlet property="registerButton" destination="5n4-cg-qvm" id="3eM-Le-3gk"/>
                         <outlet property="usernameTextField" destination="ndG-J2-4B9" id="NMI-Ew-ZHp"/>
+                        <segue destination="bIY-wQ-Uey" kind="show" identifier="goToChat" id="Owo-Vd-oe9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vP7-bh-O2s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855" y="179"/>
+            <point key="canvasLocation" x="4521" y="188"/>
         </scene>
         <!--Chatzapp-->
         <scene sceneID="E0n-8t-Go3">
@@ -263,7 +263,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="h3h-xu-1RB" eventType="touchUpInside" id="uPC-nJ-1we"/>
-                                    <segue destination="bIY-wQ-Uey" kind="show" identifier="goToChat" id="gHX-Ht-edH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -292,6 +291,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="UZE-ym-jWr" id="A0o-Hu-7QT"/>
                         <outlet property="passwordTextField" destination="AgF-uC-dq4" id="rxA-04-uxD"/>
+                        <segue destination="bIY-wQ-Uey" kind="show" identifier="goToChat" id="R81-Xj-wzA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZX6-95-6eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -318,7 +318,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="bjK-go-Do4"/>
+        <segue reference="Owo-Vd-oe9"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
