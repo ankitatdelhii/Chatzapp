@@ -188,16 +188,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LyM-eM-DLy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="610"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="KZp-xn-aZC" customClass="customCell" customModule="Chatzapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KZp-xn-aZC" id="3UC-N2-nRh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5x-5i-CYw" userLabel="Compose Message View">
+                                <rect key="frame" x="0.0" y="610" width="375" height="57"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B2G-2J-pKX" userLabel="MessageBox">
+                                        <rect key="frame" x="10" y="13" width="281.5" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bv-gA-koC">
+                                        <rect key="frame" x="301.5" y="0.0" width="68.5" height="57"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="sendButtonPressed:" destination="bIY-wQ-Uey" eventType="touchUpInside" id="BlI-eE-RlW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="B2G-2J-pKX" firstAttribute="leading" secondItem="V5x-5i-CYw" secondAttribute="leading" constant="10" id="4HP-YS-Xdi"/>
+                                    <constraint firstItem="B2G-2J-pKX" firstAttribute="width" secondItem="V5x-5i-CYw" secondAttribute="width" multiplier="0.75" id="IhS-Sr-UpX"/>
+                                    <constraint firstAttribute="bottom" secondItem="0Bv-gA-koC" secondAttribute="bottom" id="Ipa-Ix-bWK"/>
+                                    <constraint firstAttribute="height" constant="57" id="N95-x8-ecP"/>
+                                    <constraint firstItem="0Bv-gA-koC" firstAttribute="leading" secondItem="B2G-2J-pKX" secondAttribute="trailing" constant="10" id="NTN-hl-aJp"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Bv-gA-koC" secondAttribute="trailing" constant="5" id="YgZ-6g-GPi"/>
+                                    <constraint firstAttribute="bottom" secondItem="B2G-2J-pKX" secondAttribute="bottom" constant="14" id="df1-qG-ymu"/>
+                                    <constraint firstItem="0Bv-gA-koC" firstAttribute="top" secondItem="V5x-5i-CYw" secondAttribute="top" id="yKG-Iw-ayG"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RNv-eC-3H5" firstAttribute="trailing" secondItem="LyM-eM-DLy" secondAttribute="trailing" id="0fJ-Sk-tts"/>
-                            <constraint firstItem="RNv-eC-3H5" firstAttribute="bottom" secondItem="LyM-eM-DLy" secondAttribute="bottom" id="3jU-Oa-Sor"/>
-                            <constraint firstItem="LyM-eM-DLy" firstAttribute="leading" secondItem="o98-xz-iKK" secondAttribute="leading" id="oox-Ru-Gnj"/>
-                            <constraint firstItem="LyM-eM-DLy" firstAttribute="top" secondItem="RNv-eC-3H5" secondAttribute="top" id="spH-n5-Qmr"/>
+                            <constraint firstItem="V5x-5i-CYw" firstAttribute="top" secondItem="LyM-eM-DLy" secondAttribute="bottom" id="Ccq-b3-mw6"/>
+                            <constraint firstItem="V5x-5i-CYw" firstAttribute="top" secondItem="LyM-eM-DLy" secondAttribute="bottom" id="GUd-bi-NLl"/>
+                            <constraint firstAttribute="trailing" secondItem="LyM-eM-DLy" secondAttribute="trailing" id="Tz7-fv-BeB"/>
+                            <constraint firstAttribute="bottom" secondItem="V5x-5i-CYw" secondAttribute="bottom" id="cGU-pg-OTs"/>
+                            <constraint firstItem="LyM-eM-DLy" firstAttribute="top" secondItem="o98-xz-iKK" secondAttribute="top" id="di7-C6-xL8"/>
+                            <constraint firstItem="LyM-eM-DLy" firstAttribute="leading" secondItem="o98-xz-iKK" secondAttribute="leading" id="mBp-9j-lXF"/>
+                            <constraint firstAttribute="trailing" secondItem="V5x-5i-CYw" secondAttribute="trailing" id="puY-Bo-oc5"/>
+                            <constraint firstItem="V5x-5i-CYw" firstAttribute="leading" secondItem="o98-xz-iKK" secondAttribute="leading" id="uRn-Ov-Ljg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RNv-eC-3H5"/>
                     </view>
@@ -208,6 +252,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="customTableView" destination="LyM-eM-DLy" id="7rD-oX-gZS"/>
+                        <outlet property="messageBoxTF" destination="B2G-2J-pKX" id="Mgh-Tp-m1R"/>
+                        <outlet property="sendButton" destination="0Bv-gA-koC" id="qdQ-nC-cfa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7a-Ws-RNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

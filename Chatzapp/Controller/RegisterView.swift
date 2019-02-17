@@ -28,7 +28,7 @@ class RegisterView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.hideKeyboard()
+        self.hideKeyboard()
         configureButton()
     }
     

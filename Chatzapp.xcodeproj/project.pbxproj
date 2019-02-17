@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D827152221A02D700A39319 /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827150221A02D700A39319 /* customCell.swift */; };
+		9D827153221A02D700A39319 /* customCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D827151221A02D700A39319 /* customCell.xib */; };
 		9DB783432218BB2F002CD744 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9DB783422218BB2F002CD744 /* .gitignore */; };
 		9DDCD65422186809001AA1F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCD65322186809001AA1F9 /* LoginView.swift */; };
 		9DDCD65622189E24001AA1F9 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCD65522189E24001AA1F9 /* RegisterView.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		2A9B270CB5ED02E450C40879 /* Pods-Chatzapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatzapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chatzapp/Pods-Chatzapp.debug.xcconfig"; sourceTree = "<group>"; };
 		88E57F678BB34E978EF73D97 /* Pods_Chatzapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatzapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D827150221A02D700A39319 /* customCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
+		9D827151221A02D700A39319 /* customCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customCell.xib; sourceTree = "<group>"; };
 		9DB783422218BB2F002CD744 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9DDCD65322186809001AA1F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9DDCD65522189E24001AA1F9 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9D82714D2219FF8700A39319 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAC5A022184EDE00AE6197 /* WelcomeView.swift */,
+				9DDCD65522189E24001AA1F9 /* RegisterView.swift */,
+				9DDCD65322186809001AA1F9 /* LoginView.swift */,
+				9DDCD6572218A686001AA1F9 /* ChatView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D82714E2219FFA600A39319 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAC59222184A9500AE6197 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D82714F221A027E00A39319 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9D827150221A02D700A39319 /* customCell.swift */,
+				9D827151221A02D700A39319 /* customCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		9DEAC58222184A9500AE6197 = {
 			isa = PBXGroup;
 			children = (
@@ -80,12 +112,10 @@
 		9DEAC58D22184A9500AE6197 /* Chatzapp */ = {
 			isa = PBXGroup;
 			children = (
+				9D82714E2219FFA600A39319 /* View */,
+				9D82714D2219FF8700A39319 /* Controller */,
+				9D82714F221A027E00A39319 /* Custom Cell */,
 				9DEAC58E22184A9500AE6197 /* AppDelegate.swift */,
-				9DEAC59222184A9500AE6197 /* Main.storyboard */,
-				9DEAC5A022184EDE00AE6197 /* WelcomeView.swift */,
-				9DDCD65522189E24001AA1F9 /* RegisterView.swift */,
-				9DDCD65322186809001AA1F9 /* LoginView.swift */,
-				9DDCD6572218A686001AA1F9 /* ChatView.swift */,
 				9DEAC59522184A9600AE6197 /* Assets.xcassets */,
 				9DEAC59722184A9600AE6197 /* LaunchScreen.storyboard */,
 				9DEAC59A22184A9600AE6197 /* Info.plist */,
@@ -165,6 +195,7 @@
 			files = (
 				9DB783432218BB2F002CD744 /* .gitignore in Resources */,
 				9DEAC59922184A9600AE6197 /* LaunchScreen.storyboard in Resources */,
+				9D827153221A02D700A39319 /* customCell.xib in Resources */,
 				9DDCD65A2218B5DF001AA1F9 /* GoogleService-Info.plist in Resources */,
 				9DEAC59622184A9600AE6197 /* Assets.xcassets in Resources */,
 				9DEAC59422184A9500AE6197 /* Main.storyboard in Resources */,
@@ -239,6 +270,7 @@
 			files = (
 				9DDCD65422186809001AA1F9 /* LoginView.swift in Sources */,
 				9DDCD65622189E24001AA1F9 /* RegisterView.swift in Sources */,
+				9D827152221A02D700A39319 /* customCell.swift in Sources */,
 				9DDCD6582218A686001AA1F9 /* ChatView.swift in Sources */,
 				9DEAC58F22184A9500AE6197 /* AppDelegate.swift in Sources */,
 				9DEAC5A122184EDE00AE6197 /* WelcomeView.swift in Sources */,

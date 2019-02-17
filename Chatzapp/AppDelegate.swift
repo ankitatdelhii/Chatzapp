@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
-        let db = Database.database().reference()
-        db.setValue("Got Data!")
+//        let db = Database.database().reference()
+//        db.setValue("Got Data!")
         return true
     }
 
