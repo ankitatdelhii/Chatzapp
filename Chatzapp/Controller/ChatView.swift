@@ -15,6 +15,8 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var customTableView: UITableView!
     @IBOutlet weak var sendButton: UIButton!
     
+    var messageArray = [MessagesModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customTableView.delegate = self
@@ -23,7 +25,10 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Do any additional setup after loading the view.
         customTableView.register(UINib(nibName: "customCell", bundle: nil), forCellReuseIdentifier: "customCell")
         self.hideKeyboard()
+        configureTableView()
+        retrieveMessage()
     }
+    
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
         do {
@@ -57,6 +62,28 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    //MARK: Retrive Messages
+    func retrieveMessage(){
+        let db = Database.database().reference().child("Messages")
+        db.observe(.childAdded) { (snapshot) in
+            let snapshotValue = snapshot.value as! [String : String]
+            let sender = snapshotValue["Sender"]
+            let message = snapshotValue["MessageBody"]
+            var messageObj = MessagesModel()
+            messageObj.messageBody = message
+            messageObj.sender = sender
+            self.messageArray.append(messageObj)
+            self.configureTableView()
+            self.customTableView.reloadData()
+        }
+    }
+    
+    //MARK: Configuring Table View
+    func configureTableView(){
+        customTableView.rowHeight = UITableView.automaticDimension
+        customTableView.estimatedRowHeight = 90.0
+    }
+    
     //MARK: TableView Methods
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath)
@@ -66,4 +93,5 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+    
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D827152221A02D700A39319 /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827150221A02D700A39319 /* customCell.swift */; };
 		9D827153221A02D700A39319 /* customCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D827151221A02D700A39319 /* customCell.xib */; };
+		9D827156221A11D500A39319 /* MessagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D827155221A11D500A39319 /* MessagesModel.swift */; };
 		9DB783432218BB2F002CD744 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9DB783422218BB2F002CD744 /* .gitignore */; };
 		9DDCD65422186809001AA1F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCD65322186809001AA1F9 /* LoginView.swift */; };
 		9DDCD65622189E24001AA1F9 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDCD65522189E24001AA1F9 /* RegisterView.swift */; };
@@ -27,6 +28,7 @@
 		88E57F678BB34E978EF73D97 /* Pods_Chatzapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chatzapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D827150221A02D700A39319 /* customCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
 		9D827151221A02D700A39319 /* customCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customCell.xib; sourceTree = "<group>"; };
+		9D827155221A11D500A39319 /* MessagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesModel.swift; sourceTree = "<group>"; };
 		9DB783422218BB2F002CD744 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9DDCD65322186809001AA1F9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9DDCD65522189E24001AA1F9 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
+		9D827154221A11B800A39319 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9D827155221A11D500A39319 /* MessagesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9DEAC58222184A9500AE6197 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +122,7 @@
 		9DEAC58D22184A9500AE6197 /* Chatzapp */ = {
 			isa = PBXGroup;
 			children = (
+				9D827154221A11B800A39319 /* Model */,
 				9D82714E2219FFA600A39319 /* View */,
 				9D82714D2219FF8700A39319 /* Controller */,
 				9D82714F221A027E00A39319 /* Custom Cell */,
@@ -273,6 +284,7 @@
 				9D827152221A02D700A39319 /* customCell.swift in Sources */,
 				9DDCD6582218A686001AA1F9 /* ChatView.swift in Sources */,
 				9DEAC58F22184A9500AE6197 /* AppDelegate.swift in Sources */,
+				9D827156221A11D500A39319 /* MessagesModel.swift in Sources */,
 				9DEAC5A122184EDE00AE6197 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
