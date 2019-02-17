@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ChatView: UIViewController {
 
@@ -16,5 +17,14 @@ class ChatView: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        do {
+        try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        }
+        catch{
+            print(error)
+        }
+    }
+    
 }

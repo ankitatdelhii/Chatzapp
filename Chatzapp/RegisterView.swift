@@ -7,6 +7,18 @@
 //
 
 import UIKit
+import Firebase
+
+extension UIViewController{
+    func hideKeyboard(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
+}
 
 class RegisterView: UIViewController {
     @IBOutlet weak var registerButton: UIButton!
@@ -16,8 +28,8 @@ class RegisterView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.hideKeyboard()
         configureButton()
-        // Do any additional setup after loading the view.
     }
     
     func configureButton(){
@@ -27,6 +39,14 @@ class RegisterView: UIViewController {
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
+        Auth.auth().createUser(withEmail: usernameTextField.text!, password: passwordTextField.text!) { (user, error) in
+            if error != nil{
+                print(error ?? "Error Registering User")
+            }
+            else{
+                self.performSegue(withIdentifier: "goToChat", sender: self)
+            }
+        }
     }
     
 }

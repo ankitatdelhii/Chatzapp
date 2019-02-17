@@ -202,7 +202,11 @@
                         <viewLayoutGuide key="safeArea" id="RNv-eC-3H5"/>
                     </view>
                     <navigationItem key="navigationItem" title="Chatzapp" id="dj3-N9-pZv">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" style="done" id="aGm-nA-kgo"/>
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" style="done" id="aGm-nA-kgo">
+                            <connections>
+                                <action selector="logOutPressed:" destination="bIY-wQ-Uey" id="ZKj-ak-cxf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7a-Ws-RNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
