@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -31,8 +32,10 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        SVProgressHUD.show()
         do {
         try Auth.auth().signOut()
+            SVProgressHUD.dismiss()
             navigationController?.popToRootViewController(animated: true)
         }
         catch{

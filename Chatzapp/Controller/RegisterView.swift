@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 extension UIViewController{
     func hideKeyboard(){
@@ -39,11 +40,13 @@ class RegisterView: UIViewController {
     }
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
+        SVProgressHUD.show()
         Auth.auth().createUser(withEmail: usernameTextField.text!, password: passwordTextField.text!) { (user, error) in
             if error != nil{
                 print(error ?? "Error Registering User")
             }
             else{
+                SVProgressHUD.dismiss()
                 self.performSegue(withIdentifier: "goToChat", sender: self)
             }
         }
