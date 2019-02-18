@@ -20,6 +20,10 @@
 		9DEAC59622184A9600AE6197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAC59522184A9600AE6197 /* Assets.xcassets */; };
 		9DEAC59922184A9600AE6197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DEAC59722184A9600AE6197 /* LaunchScreen.storyboard */; };
 		9DEAC5A122184EDE00AE6197 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEAC5A022184EDE00AE6197 /* WelcomeView.swift */; };
+		9DF05823221B4D8400233754 /* ss4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF0581F221B4D8300233754 /* ss4.jpg */; };
+		9DF05824221B4D8400233754 /* ss3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF05820221B4D8400233754 /* ss3.jpg */; };
+		9DF05825221B4D8400233754 /* ss1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF05821221B4D8400233754 /* ss1.jpg */; };
+		9DF05826221B4D8400233754 /* ss2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9DF05822221B4D8400233754 /* ss2.jpg */; };
 		E86C590C4DECA972C22577CE /* Pods_Chatzapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E57F678BB34E978EF73D97 /* Pods_Chatzapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		9DEAC59822184A9600AE6197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DEAC59A22184A9600AE6197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DEAC5A022184EDE00AE6197 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		9DF0581F221B4D8300233754 /* ss4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss4.jpg; sourceTree = "<group>"; };
+		9DF05820221B4D8400233754 /* ss3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss3.jpg; sourceTree = "<group>"; };
+		9DF05821221B4D8400233754 /* ss1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss1.jpg; sourceTree = "<group>"; };
+		9DF05822221B4D8400233754 /* ss2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss2.jpg; sourceTree = "<group>"; };
 		CF00FEF2B69460216013FEEF /* Pods-Chatzapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chatzapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chatzapp/Pods-Chatzapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,8 +140,20 @@
 				9DEAC59A22184A9600AE6197 /* Info.plist */,
 				9DDCD6592218B5DF001AA1F9 /* GoogleService-Info.plist */,
 				9DB783422218BB2F002CD744 /* .gitignore */,
+				9DF0581E221B4C9400233754 /* Screenshots */,
 			);
 			path = Chatzapp;
+			sourceTree = "<group>";
+		};
+		9DF0581E221B4C9400233754 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				9DF05821221B4D8400233754 /* ss1.jpg */,
+				9DF05822221B4D8400233754 /* ss2.jpg */,
+				9DF05820221B4D8400233754 /* ss3.jpg */,
+				9DF0581F221B4D8300233754 /* ss4.jpg */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		D2DF2E25DFA91285F5EEEB10 /* Frameworks */ = {
@@ -207,9 +227,13 @@
 				9DB783432218BB2F002CD744 /* .gitignore in Resources */,
 				9DEAC59922184A9600AE6197 /* LaunchScreen.storyboard in Resources */,
 				9D827153221A02D700A39319 /* customCell.xib in Resources */,
+				9DF05825221B4D8400233754 /* ss1.jpg in Resources */,
 				9DDCD65A2218B5DF001AA1F9 /* GoogleService-Info.plist in Resources */,
 				9DEAC59622184A9600AE6197 /* Assets.xcassets in Resources */,
+				9DF05826221B4D8400233754 /* ss2.jpg in Resources */,
 				9DEAC59422184A9500AE6197 /* Main.storyboard in Resources */,
+				9DF05823221B4D8400233754 /* ss4.jpg in Resources */,
+				9DF05824221B4D8400233754 /* ss3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
