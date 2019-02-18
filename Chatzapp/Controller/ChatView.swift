@@ -94,9 +94,11 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.senderLabel.text = messageArray[indexPath.row].sender!
         if cell.senderLabel.text! == Auth.auth().currentUser?.email!{
             cell.messageLabel.textAlignment = NSTextAlignment.right
+            cell.senderPic.image = UIImage(named: "avatar1")
         }
         else{
             cell.messageLabel.textAlignment = NSTextAlignment.left
+            cell.senderPic.image = UIImage(named: "avatar2")
         }
         return cell
     }
