@@ -49,7 +49,7 @@
                             <constraint firstItem="mx2-gP-Aev" firstAttribute="top" secondItem="1zF-Zz-5H0" secondAttribute="top" id="IgI-9d-Aqa"/>
                             <constraint firstItem="mx2-gP-Aev" firstAttribute="leading" secondItem="BFu-uI-E3c" secondAttribute="trailing" constant="10" id="Jnw-pp-Mzc"/>
                             <constraint firstItem="H7c-HQ-URg" firstAttribute="leading" secondItem="1zF-Zz-5H0" secondAttribute="leading" constant="8" id="YJe-t2-0Mh"/>
-                            <constraint firstAttribute="bottom" secondItem="H7c-HQ-URg" secondAttribute="bottom" constant="5.5" id="fUv-Zj-Cfq"/>
+                            <constraint firstItem="H7c-HQ-URg" firstAttribute="centerY" secondItem="1zF-Zz-5H0" secondAttribute="centerY" id="fsd-RX-xBc"/>
                             <constraint firstItem="BFu-uI-E3c" firstAttribute="top" secondItem="1zF-Zz-5H0" secondAttribute="top" id="myH-dk-80w"/>
                             <constraint firstAttribute="bottom" secondItem="BFu-uI-E3c" secondAttribute="bottom" constant="0.5" id="q0E-Xz-roW"/>
                             <constraint firstItem="H7c-HQ-URg" firstAttribute="width" secondItem="1zF-Zz-5H0" secondAttribute="width" multiplier="0.1" id="r8T-7d-iYh"/>
@@ -66,6 +66,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="backView" destination="1zF-Zz-5H0" id="Kof-6a-Lrk"/>
                 <outlet property="messageLabel" destination="BFu-uI-E3c" id="9el-Zk-KJc"/>
                 <outlet property="senderLabel" destination="mx2-gP-Aev" id="PCK-6I-vM1"/>
                 <outlet property="senderPic" destination="H7c-HQ-URg" id="7yS-Nw-qTF"/>

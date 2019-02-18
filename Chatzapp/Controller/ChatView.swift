@@ -85,6 +85,7 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func configureTableView(){
         customTableView.rowHeight = UITableView.automaticDimension
         customTableView.estimatedRowHeight = 90.0
+        customTableView.separatorStyle = .none
     }
     
     //MARK: TableView Methods
@@ -95,6 +96,7 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if cell.senderLabel.text! == Auth.auth().currentUser?.email!{
             cell.messageLabel.textAlignment = NSTextAlignment.right
             cell.senderPic.image = UIImage(named: "avatar1")
+            cell.backView.backgroundColor = UIColor.lightGray
         }
         else{
             cell.messageLabel.textAlignment = NSTextAlignment.left

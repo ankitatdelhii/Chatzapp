@@ -10,6 +10,7 @@ import UIKit
 
 class customCell: UITableViewCell {
 
+    @IBOutlet weak var backView: UIView!
     @IBOutlet weak var senderLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var senderPic: UIImageView!
