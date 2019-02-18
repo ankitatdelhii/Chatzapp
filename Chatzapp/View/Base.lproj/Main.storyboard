@@ -42,12 +42,21 @@
                                             <segue destination="h3h-xu-1RB" kind="show" identifier="goToLogin" id="3ey-jC-CGz"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="XEr-e6-Lvp">
+                                        <rect key="frame" x="88" y="104" width="199" height="199"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="XEr-e6-Lvp" secondAttribute="height" multiplier="1:1" id="jUW-6c-YNq"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="XEr-e6-Lvp" firstAttribute="centerX" secondItem="yDG-Xq-2r3" secondAttribute="centerX" id="0A7-dM-aUP"/>
                                     <constraint firstItem="rI7-MI-PbL" firstAttribute="centerX" secondItem="yDG-Xq-2r3" secondAttribute="centerX" id="1gl-MC-IpP"/>
                                     <constraint firstItem="Scb-Av-pAG" firstAttribute="width" secondItem="rI7-MI-PbL" secondAttribute="width" id="3fu-iM-WJt"/>
+                                    <constraint firstItem="XEr-e6-Lvp" firstAttribute="top" secondItem="yDG-Xq-2r3" secondAttribute="top" constant="104" id="AnL-Dt-13l"/>
                                     <constraint firstItem="Scb-Av-pAG" firstAttribute="top" secondItem="rI7-MI-PbL" secondAttribute="bottom" constant="34" id="Hdr-cX-9bb"/>
+                                    <constraint firstItem="XEr-e6-Lvp" firstAttribute="width" secondItem="yDG-Xq-2r3" secondAttribute="width" multiplier="0.53" id="Zkd-h3-XU0"/>
                                     <constraint firstItem="Scb-Av-pAG" firstAttribute="centerX" secondItem="yDG-Xq-2r3" secondAttribute="centerX" id="c30-bp-f5R"/>
                                     <constraint firstAttribute="bottom" secondItem="Scb-Av-pAG" secondAttribute="bottom" constant="53" id="tVX-OA-iFZ"/>
                                     <constraint firstItem="Scb-Av-pAG" firstAttribute="height" secondItem="rI7-MI-PbL" secondAttribute="height" id="uRo-Sh-Sn0"/>
@@ -314,11 +323,18 @@
                                     <action selector="loginButtonPressed:" destination="h3h-xu-1RB" eventType="touchUpInside" id="uPC-nJ-1we"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoRed" translatesAutoresizingMaskIntoConstraints="NO" id="G2O-JN-4K9">
+                                <rect key="frame" x="112.5" y="95" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="G2O-JN-4K9" secondAttribute="height" multiplier="1:1" id="dXf-Xs-dqj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AgF-uC-dq4" firstAttribute="top" secondItem="aot-uh-rAa" secondAttribute="bottom" constant="20" id="4BK-pA-69B"/>
                             <constraint firstItem="Ste-OC-nYt" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="AgF-uC-dq4" secondAttribute="trailing" constant="88" id="6Mv-sR-NC7"/>
+                            <constraint firstItem="G2O-JN-4K9" firstAttribute="centerX" secondItem="pS6-2e-tmC" secondAttribute="centerX" id="8k7-3M-Cux"/>
                             <constraint firstItem="by7-WF-Y8x" firstAttribute="leading" secondItem="Ste-OC-nYt" secondAttribute="leading" constant="37" id="BXl-A8-Ftb"/>
                             <constraint firstItem="aot-uh-rAa" firstAttribute="leading" secondItem="Ste-OC-nYt" secondAttribute="leading" constant="37" id="DAe-i4-daq"/>
                             <constraint firstAttribute="bottom" secondItem="YvO-ZF-Bnh" secondAttribute="bottom" constant="44" id="Iyc-33-6V9"/>
@@ -328,9 +344,11 @@
                             <constraint firstItem="Ste-OC-nYt" firstAttribute="trailing" secondItem="YvO-ZF-Bnh" secondAttribute="trailing" constant="108" id="PVE-T4-8PQ"/>
                             <constraint firstItem="UZE-ym-jWr" firstAttribute="leading" secondItem="Ste-OC-nYt" secondAttribute="leading" constant="37" id="Q6x-Fz-Lwv"/>
                             <constraint firstItem="UZE-ym-jWr" firstAttribute="top" secondItem="by7-WF-Y8x" secondAttribute="bottom" constant="20" id="Ril-2Z-sqI"/>
+                            <constraint firstItem="G2O-JN-4K9" firstAttribute="top" secondItem="Ste-OC-nYt" secondAttribute="top" constant="31" id="SYl-0R-EzP"/>
                             <constraint firstItem="Ste-OC-nYt" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="UZE-ym-jWr" secondAttribute="trailing" constant="88" id="ThZ-U3-yhU"/>
                             <constraint firstItem="AgF-uC-dq4" firstAttribute="width" secondItem="UZE-ym-jWr" secondAttribute="width" id="Tjj-iK-Fsu"/>
                             <constraint firstItem="Ste-OC-nYt" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="aot-uh-rAa" secondAttribute="trailing" constant="209" id="X5z-63-W0q"/>
+                            <constraint firstItem="G2O-JN-4K9" firstAttribute="width" secondItem="pS6-2e-tmC" secondAttribute="width" multiplier="0.4" id="cut-UJ-5e6"/>
                             <constraint firstItem="YvO-ZF-Bnh" firstAttribute="leading" secondItem="Ste-OC-nYt" secondAttribute="leading" constant="107" id="qnn-dA-UIY"/>
                             <constraint firstItem="aot-uh-rAa" firstAttribute="top" secondItem="UZE-ym-jWr" secondAttribute="bottom" constant="35" id="vpC-Ab-FjX"/>
                         </constraints>
@@ -366,8 +384,12 @@
             <point key="canvasLocation" x="3733.5999999999999" y="-599.55022488755628"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="610" height="610"/>
+        <image name="logoRed" width="610" height="610"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Owo-Vd-oe9"/>
+        <segue reference="R81-Xj-wzA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
