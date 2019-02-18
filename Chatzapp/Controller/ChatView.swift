@@ -92,6 +92,12 @@ class ChatView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! customCell
         cell.messageLabel.text = messageArray[indexPath.row].messageBody!
         cell.senderLabel.text = messageArray[indexPath.row].sender!
+        if cell.senderLabel.text! == Auth.auth().currentUser?.email!{
+            cell.messageLabel.textAlignment = NSTextAlignment.right
+        }
+        else{
+            cell.messageLabel.textAlignment = NSTextAlignment.left
+        }
         return cell
     }
     
